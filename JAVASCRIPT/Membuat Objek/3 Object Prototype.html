@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object Prototype</title>
+</head>
+<style>
+    #box {
+        background: yellow;
+        position: absolute;
+    }
+</style>
+
+<body>
+    <img src="/img/gta.jpg" alt="" width="300" height="200">
+    <div id="box"></div>
+    <div id="box1"></div>
+
+    <script>
+        // ---- objek prototype ----
+        // (+) keuntungan : cukup sekali mendefinisikan objek prototype
+        // function (spasi) objek/variable ("konstrakter"){}
+        function pemain_bola(namax, umur) {
+            // 'this' mengacu pada variable (dot)
+            // this mempunyai 'nama' (contoh) = nilai dari variable function
+            this.nama = namax;
+            this.umur = umur;
+        }
+
+        //menambahkan property diluar fungsi
+        pemain_bola.prototype.negara = "Argentina";
+
+        //input data
+        var messi = new pemain_bola("Lionel Messi", 30);
+        var suarez = new pemain_bola("Luis Suarez", 32);
+
+        //output data
+        document.getElementById('box').innerHTML = "Nama: " + messi.nama + " Umur: " + messi.umur + " Negara: " + messi
+            .negara;
+    </script>
+</body>
+
+</html>

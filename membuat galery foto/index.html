@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Membuat galeri foto</title>
+</head>
+
+<body>
+    <h1>Galeri Javascript</h1>
+
+    <img src="img/0.png" width="400" height="400" id="gambar">
+    <br>
+    <div id="caption">Astrounaut</div>
+    <br>
+    <input type="button" onclick="sebelum()" value="sebelum">
+
+    <a href="#" onclick="gambar(0)">1</a>
+    <a href="#" onclick="gambar(1)">2</a>
+    <a href="#" onclick="gambar(2)">3</a>
+    <a href="#" onclick="gambar(3)">4</a>
+
+    <input type="button" onclick="sesudah()" value="sesudah">
+
+    <script>
+        var nomor = 0;
+        var caption = document.getElementById('caption');
+        var text = ['Astrounaut', 'Grand Theft Auto 5', 'VeGe', 'VeEm'];
+
+        // function gambar(angka) {
+        //     nomor = angka;
+        //     var lokasi = 'img/' + angka + '.png';
+        //     document.getElementById('gambar').src = lokasi;
+        //     caption.innerHTML = text[angka];
+        //     return false; //menghilangkan sifat asli 
+        // }
+
+        // function sebelum() {
+        //     nomor = nomor - 1;
+
+        //     if (nomor < 0) {
+        //         nomor = 3;
+        //     }
+
+        //     var lokasi = 'img/' + nomor + '.png';
+        //     document.getElementById('gambar').src = lokasi;
+        //     caption.innerHTML = text[nomor];
+        //     return false;
+        // }
+
+        // function sesudah() {
+        //     nomor = nomor + 1;
+
+        //     if (nomor > 3) {
+        //         nomor = 0;
+        //     }
+
+        //     var lokasi = 'img/' + nomor + '.png';
+        //     document.getElementById('gambar').src = lokasi;
+        //     caption.innerHTML = text[nomor];
+        //     return false;
+        // }
+
+        //refactor fungsi mengganti gambar
+
+        function gambar(angka) {
+            nomor = angka;
+            ganti_gambar(angka);
+        }
+
+        function sebelum() {
+            nomor--;
+
+            if (nomor < 0) nomor = 3;
+            ganti_gambar(nomor);
+        }
+
+        function sesudah() {
+            nomor++;
+
+            if (nomor > 3) nomor = 0;
+            ganti_gambar(nomor);
+        }
+
+        function ganti_gambar(angka) {
+            var lokasi = 'img/' + angka + '.png';
+            document.getElementById('gambar').src = lokasi;
+            caption.innerHTML = text[angka];
+            return false; //menghilangkan sifat asli 
+        }
+    </script>
+</body>
+
+</html>

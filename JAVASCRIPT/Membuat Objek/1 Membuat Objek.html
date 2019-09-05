@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objek Pada Javascript</title>
+</head>
+
+<body>
+    <h1>Objek Pada Javascript</h1>
+    <img src="/img/gta.jpg" alt="" width="300" height="250">
+
+    <br>
+    <h3>#1 cara pertama</h3>
+    Nama : <span id="nama"></span>
+    umur : <span id="umur"></span>
+    sifat : <span id="sifat"></span>
+
+    <h3>#2 cara kedua</h3>
+    Nama : <span id="namaD"></span>
+    umur : <span id="umurD"></span>
+
+    <script>
+        //membuat objek #1
+        // key => value
+        var programmer = {
+            nama: "Surya",
+            umur: 17,
+            sifat: "pemalas"
+        };
+
+        document.getElementById('nama').innerHTML = programmer.nama;
+        document.getElementById('umur').innerHTML = programmer.umur;
+        document.getElementById('sifat').innerHTML = programmer.sifat;
+
+        //cara #2
+        var designer = new Object();
+        designer.nama = "laksana";
+        designer.umur = 16;
+
+        document.getElementById('namaD').innerHTML = designer["nama"];
+        document.getElementById('umurD').innerHTML = designer["umur"];
+    </script>
+</body>
+
+</html>

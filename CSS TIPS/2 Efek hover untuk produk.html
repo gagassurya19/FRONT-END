@@ -1,0 +1,69 @@
+<!-- tips css -->
+
+<h1>CSS TIPS</h1>
+
+<div id="wrap">
+    <img src="img/baju.png" alt="" />
+    <div id="info">
+        <p> baju mantap <span>2500,- Rp</span> </p>
+        <a href="">Belanja</a>
+    </div>
+</div>
+
+<style media="screen">
+    body {
+        margin: 5% 5%;
+        font-family: sans-serif;
+    }
+
+    #wrap {
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #info {
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding-top: 30%;
+        color: white;
+        font-size: 20px;
+    }
+
+    #info span {
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+        border: 1px solid white;
+        padding: 5px;
+    }
+
+    a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    #wrap #info {
+        display: none;
+    }
+
+    #wrap img {
+        width: 100%;
+        height: auto;
+    }
+
+    #wrap:hover #info {
+        display: block;
+    }
+</style>

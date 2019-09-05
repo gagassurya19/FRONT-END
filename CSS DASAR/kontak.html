@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kontak | Belajar HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <!-- Heading dan Paragraf -->
+        <h1> Kontak | Belajar HTML Basic </h1>
+        <p><mark> Coding Itu Menyenangkan ! </mark></p>
+    </div>
+
+    <br>
+    <div>
+        <!-- Membuat Link & Subfolder -->
+        <u>
+            <h3>Link Menu <i>SUBFOLDER</i></h3>
+        </u>
+        <a href="index.html" class="menu">HOME</a>
+        <a href="member.html" class="menu">MEMBER</a>
+        <a href="kontak.html" class="menu">KONTAK</a>
+    </div>
+    <br>
+
+    <div>
+        <!-- Membuat Table -->
+        <u>
+            <h3>Membuat <i>Table</i></h3>
+        </u>
+        <center>
+            <table border="1">
+                <tr>
+                    <th>Nama Murid</th>
+                    <th>Kota Asal</th>
+                    <th>Nama Orang Tua</th>
+                </tr>
+                <tr>
+                    <td>User</td>
+                    <td>T.Agung</td>
+                    <td><input type="text" placeholder="ayah"></td>
+                </tr>
+                <tr>
+                    <td>admin</td>
+                    <td>Kediri</td>
+                    <td><input type="text" placeholder="ibu"></td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    <br>
+
+    <div>
+        <!-- List Pada Html -->
+        <u>
+            <h3>Membuat <i>List</i></h3>
+        </u>
+
+        <ul>
+            <li>user</li>
+            <li>admin</li>
+        </ul>
+
+        <ol>
+            <li>user</li>
+            <li>admin</li>
+        </ol>
+
+        <dl>
+            <dt>user</dt>
+            <dd>User Pertama</dd>
+            <dt>admin</dt>
+            <dd>User Kedua</dd>
+        </dl>
+
+        <br>
+
+        <div>
+            <!-- Membuat Form -->
+            <u>
+                <h3>Membuat Form</h3>
+            </u>
+            <form>
+                <fieldset>
+                    <legend> Nama Dan Pesan </legend>
+                    <label for="nama_0"><b>Nama :</b></label> <br>
+                    <input type="text" placeholder="Nama Kamu" id="nama_0">
+                    <br><br>
+                    <label for="pesan_mu"><b>Tulis Pesanmu :</b></label> <br>
+                    <textarea name="" id="pesan_mu" cols="100" rows="7"> Pesan Kamu....</textarea>
+                    <br>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Pilihan Data </legend>
+                    <label>Hobi</label> <br>
+                    <input type="checkbox" name="hobi" value="0"> Menggambar
+                    <input type="checkbox" name="hobi" value="1" checked> Menulis
+                    <input type="checkbox" name="hobi" value="2"> Menyanyi
+                    <br>
+                    <label>Jenis Kelamin</label> <br>
+                    <input type="radio" name="gender" value="0" checked> Laki - Laki
+                    <input type="radio" name="gender" value="1"> Perempuan
+                    <br>
+                    <label>Pelajaran</label>
+                    <select>
+                        <optgroup label="Frontend">
+                            <option value="0">Html</option>
+                            <option value="1">css</option>
+                            <option value="2">javascript</option>
+                        </optgroup>
+
+                        <optgroup label="Backend">
+                            <option value="0">PHP</option>
+                            <option value="1">Database</option>
+                            <option value="2">SQL</option>
+                        </optgroup>
+                    </select>
+
+                </fieldset>
+                <br>
+                <input type="submit" value="Kirim Data">
+            </form>
+        </div>
+
+        <br><br>
+
+        <!-- CHARSET -->
+        <div>
+            <p>
+                <p> &copy;2019 Gagassurya19</p>
+                <p>create with &hearts;</p>
+            </p>
+        </div>
+</body>
+
+</html>

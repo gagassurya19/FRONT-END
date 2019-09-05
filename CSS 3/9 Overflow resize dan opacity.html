@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Overflow resize dan opacity</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* offline font */
+    @font-face {
+        font-family: Terserah_namanya;
+        /* nama font atau terserah */
+        src: url('url/directory folder font')
+    }
+
+    div {
+        /* online font */
+        font-family: 'Roboto', sans-serif;
+        width: 150px;
+        height: 150px;
+        background: yellow;
+        overflow: hidden;
+        resize: both;
+        opacity: 0.4;
+        transition: opacity 2s;
+    }
+
+    div:hover {
+        opacity: 1;
+    }
+
+    img {
+        opacity: 0.5;
+        transition: opacity 2s;
+    }
+
+    img:hover {
+        opacity: 1;
+    }
+</style>
+
+<body>
+    <h1>Overflow resize dan opacity</h1>
+    <div>Text Here, Belajar Koding di Sekola Koding,
+        Text Here, Belajar Koding di Sekola Koding,
+        Text Here, Belajar Koding di Sekola Koding,
+        Text Here, Belajar Koding di Sekola Koding,
+        Text Here, Belajar Koding di Sekola Koding,
+    </div>
+    <img src="img/vg.jpg" alt="">
+</body>
+
+</html>

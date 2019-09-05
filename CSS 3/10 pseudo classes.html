@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo Classes</title>
+</head>
+<style>
+    body :not(h1) {
+        color: red;
+    }
+
+    p:first-child {
+        color: blue;
+    }
+
+    p:last-child {
+        font-size: 20px;
+    }
+
+    p:only-child {
+        background: yellow;
+    }
+
+    /* ul :nth-child(2) {
+        text-decoration: line-through;
+    } */
+
+    /* untuk angka ganjil (odd) */
+    ul :nth-child(odd) {
+        text-decoration: underline;
+    }
+
+    /* untuk angka genap (even) */
+    ul :nth-child(even) {
+        text-decoration: line-through;
+    }
+
+    /* kelipatan dari rumus (an+b) */
+    ul :nth-child(3n+0) {
+        background: aqua;
+    }
+
+    input:checked {
+        width: 50px;
+    }
+
+    /* enabled, disabled, invalid */
+    input:enabled {
+        border: 2px solid blue;
+    }
+
+    input:disabled {
+        border: 2px solid red;
+    }
+
+    input:invalid {
+        background: red;
+        color: white;
+    }
+</style>
+
+<body>
+    <h1>Pseudo Classes</h1>
+    <div>
+        <p>paragraf pertama</p>
+    </div>
+
+    <div>
+        <span>span pertama</span>
+        <p>paragraf pertama</p>
+    </div>
+
+
+    <div>
+        <p>paragraf pertama</p>
+        <p>paragraf kedua</p>
+        <p>paragraf ketiga</p>
+    </div>
+
+    <h1>Nth Child</h1>
+    <ul>
+        <li>list pertama</li>
+        <li>list kedua</li>
+        <li>list ketiga</li>
+        <li>list keempat</li>
+        <li>list kelima</li>
+        <li>list keenam</li>
+        <li>list ketuju</li>
+        <li>list kedelapan</li>
+        <li>list kesembilan</li>
+    </ul>
+
+    <h1>input</h1>
+    <input type="checkbox">male
+    <input type="checkbox" checked>female
+    <br><br>
+
+    <input type="text" placeholder="nama lengkap">
+    <input type="text" placeholder="nama pendek">
+    <input type="text" placeholder="kota asak" disabled>
+    <input type="email" placeholder="email">
+
+    <br><br><br>
+    sekolah koding
+</body>
+
+</html>

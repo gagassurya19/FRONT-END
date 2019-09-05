@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar JAVASCRIPT</title>
+</head>
+<style>
+    #wrap {
+        background-color: black;
+        color: white;
+        font-size: 24px;
+    }
+</style>
+
+<body>
+    <div id="wrap"></div>
+
+    <script>
+        //(1) FUNGSI
+
+        // Menuliskan fungsi
+        // function printText() {
+        //     alert("hai selamat datang!");
+        //     var x = "Sekolah Koding";
+        //     document.getElementById("wrap").innerHTML = x;
+        // }
+
+        // //Memanggil Fungsi
+        // printText();
+
+        //(2) parameter pada fungsi
+        // function printText(nama) {
+        //     var text = nama + " yang baru";
+        //     document.getElementById("wrap").innerHTML = text;
+        // }
+
+        // var nama = "Sekolah Koding";
+        // printText(nama + " 123");
+
+        //parameter lebih dari satu pada fungsi 
+        // function printText(nama, angka, nama2) {
+        //     var text = nama + angka + nama2;
+        //     document.getElementById("wrap").innerHTML = text;
+        // }
+
+        // printText("sekolah koding", " 123", " yang baru");
+
+        //(3) Return pada javascript
+        // function jumlah(angka1, angka2) {
+        //     return angka1 + angka2;
+        // }
+
+        // var text = jumlah(20, 30) + " yang baru";
+        // document.getElementById("wrap").innerHTML = text;
+
+        // (4) scope di javascript
+        // global var & local var
+
+        //global
+        var text = "sekolah koding";
+
+        function printText() {
+            //local var
+            // var text2 = " situs lain";
+
+            //global var
+            // text2 = " situs lain";
+
+        }
+
+        printText();
+
+        document.getElementById("wrap").innerHTML = text;
+    </script>
+</body>
+
+</html>

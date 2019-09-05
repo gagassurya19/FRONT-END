@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>animasi dan keyframes</title>
+</head>
+<style>
+    body {
+        margin-bottom: 500px;
+        margin-left: 50px;
+    }
+
+    div {
+        background: yellow;
+        width: 150px;
+        height: 150px;
+        animation-name: goyang;
+        animation-duration: 5s;
+
+        -webkit-animation-name: goyang;
+        -webkit-animation-duration: 5s;
+
+        animation-iteration-count: 4;
+        animation-direction: alternate;
+
+        /*delay awal animasi*/
+        animation-delay: 1s;
+        /* fill: nentuin berhenti dikondisi akhir */
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-play-state: paused
+    }
+
+    div:hover {
+        animation-play-state: running;
+    }
+
+    /* keyframes menggunakan: from/to */
+    /* @keyframes goyang {
+        from {
+            background: yellow;
+        }
+
+        to {
+            background: red;
+        }
+    } */
+
+    /* keyframes menggunakan: persentase */
+    @keyframes goyang {
+        0% {
+            baackground: yellow;
+            width: 160px
+        }
+
+        25% {
+            background: red
+        }
+
+        50% {
+            background: blue;
+            width: 140px
+        }
+
+        75% {
+            background: aqua
+        }
+
+        100% {
+            background: black;
+            width: 100px
+        }
+    }
+
+    /* Chrome, safari, opera */
+    @-webkit-keyframes goyang {
+        from {
+            background: yellow;
+        }
+
+        to {
+            background: red;
+        }
+    }
+</style>
+
+<body>
+    <h1>Animasi</h1>
+    <div></div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FORM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>isi pesan anda</legend>
+            <label for="nama_anda">Nama</label>
+            <textarea cols="30" rows="10" value="nama anda" id="nama_anda">deskripsikan tentang anda</textarea>
+            <br>
+            <br>
+            <label for="pesan_anda">Pesan</label>
+            <input type="text" placeholder="nama anda" id="pesan_anda">
+        </fieldset>
+        <fieldset>
+            <legend>lengkapi biodata anda</legend>
+            <label><b>HOBI</b></label>
+            <br>
+            <input type="checkbox" name="hobi_user" value="0"> menyanyi
+            <input type="checkbox" name="hobi_user" value="1" checked> menggambar
+            <input type="checkbox" name="hobi_user" value="2"> traveling
+            <br>
+            <label><b>JENIS KELAMIN</b></label>
+            <br>
+            <input type="radio" name="gender" value="0" checked> laki-laki
+            <input type="radio" name="gender" value="1"> perempuan
+            <br>
+            <label>BAHASA PEMROGRAMAN</label>
+            <select name="" id="">
+                <optgroup label="frontend">
+                    <option value="html">html</option>
+                    <option value="css">css</option>
+                </optgroup>
+                <optgroup label="backend">
+                    <option value="php">php</option>
+                    <option value="db">database</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <input type="submit" name="kirim" id="kirim_data" value="kirim">
+    </form>
+
+</body>
+
+</html>

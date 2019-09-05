@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Metode Objek</title>
+</head>
+<style>
+    #box {
+        text-decoration: none;
+        color: black;
+        background-color: yellow;
+        position: absolute;
+    }
+</style>
+
+<body>
+    <h1>Metode Object</h1>
+    <img src="/img/gta.jpg" alt="" width="300" height="250">
+    <br>
+
+    <div id="box"></div>
+
+    <script>
+        //metode pada objek
+        // key => value
+        var programmer = {
+            nama: "Surya",
+            umur: 17,
+            sifat: "Pemalas",
+            //nama : function()
+            getData: function () {
+                //mengembalikan semua data menggunakan "Return"
+                //"this" = mengacu pada variablenya sendiri
+                return "Nama: " + this.nama + " Umur: " + this.umur + " Sifat: " + this.sifat;
+            },
+            //mengubah data menggunakan function
+            setData: function (nama) {
+                this.nama = nama;
+            }
+        };
+
+        //-- MUTABLE --
+        // adalah ketika kita mengoper objectnya pada suatu variable, 
+        // dan satu variable ini dirubah nilainya, maka otomatis object akan ikut berubah
+
+        //nilai designer = Programmer
+        var designer = programmer;
+        //designer.nama nilainya adalah "messi"
+        designer.nama = "messi";
+
+        //output
+        document.getElementById('box').innerHTML = programmer.nama;
+
+        //data yang di ubah dipanggil
+        programmer.setData("Laksana"); // data Nama "surya" dirubah ke "Laksana"
+        document.getElementById('box').innerHTML = programmer.getData();
+    </script>
+</body>
+
+</html>

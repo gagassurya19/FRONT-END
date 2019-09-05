@@ -1,0 +1,58 @@
+<!-- tips css -->
+
+<h1>CSS TIPS</h1>
+
+<div class="wrapper">
+    <a href="#menu1">Menu1</a>
+    <div id="menu1" class="isi"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos obcaecati cum explicabo
+        beatae temporibus voluptas, iste odio sapiente architecto accusamus eaque. Distinctio aliquam magni quo quidem,
+        iure
+        deleniti officiis totam?</div>
+</div>
+
+<div class="wrapper">
+    <a href="#menu2">Menu2</a>
+    <div id="menu2" class="isi"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos obcaecati cum explicabo
+        beatae temporibus voluptas, iste odio sapiente architecto accusamus eaque. Distinctio aliquam magni quo quidem,
+        iure
+        deleniti officiis totam?</div>
+</div>
+
+<div class="wrapper">
+    <a href="#menu3">Menu3</a>
+    <div id="menu3" class="isi"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos obcaecati cum explicabo
+        beatae temporibus voluptas, iste odio sapiente architecto accusamus eaque. Distinctio aliquam magni quo quidem,
+        iure
+        deleniti officiis totam?</div>
+</div>
+
+<style media="screen">
+    body {
+        margin: 15% 15%;
+        font-family: sans-serif;
+    }
+
+    .wrapper {
+        margin: 30px;
+    }
+
+    a {
+        display: block;
+        background-color: rgb(199, 189, 230);
+        color: white;
+        font-size: 26px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .isi {
+        padding: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .isi:target {
+        padding: 5px 10px;
+        height: auto;
+    }
+</style>

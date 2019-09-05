@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar JAVASCRIPT</title>
+</head>
+<style>
+    #wrap {
+        background-color: black;
+        color: white;
+        font-size: 24px;
+    }
+</style>
+
+<body>
+    <div id="wrap"></div>
+    <script>
+        // Deklarasi Variable
+        //--------------------
+        // Nama dimulai dengan huruf atau $ atau _
+        // Nama boleh mengandung huruf, angka underscore _ dan $ dollar
+        // Nama itu case sensitive
+        // ada 'reserved words' yang tidak boleh dipakai
+
+        // tipe data string
+        var text = "Sekolah koding";
+        var text2 = " yang baru";
+
+        // tipe data number/angka
+        var angka = 1000;
+        var angka2 = 123;
+        var angka3 = 1003
+
+        //mengubah variable
+        // test2 = " Yang lama";
+
+        //operato matekamtika + - / * %
+        // var angka_baru = angka / angka2;
+
+        //angka_baru++; //increment //menjumlahkan dengan 1
+        // angka--; //decrement //mengurangi dengan 1
+
+        // var angka2 = angka2 + angka;
+        // angka2 += angka; //lebih singkat
+
+        //-----------metode number------------
+        // toFixed(n) toString() random() min(a,b,c,dst) max(a,b,c,dst)
+        // var angka_baru = Math.min(angka, angka2, angka3);
+
+        // round() ceil() floor() Object Methods(contoh: abs, log)
+        // random specific formula -> Math.floor(Math.random()*x) + 1;
+        var x = 10; //range atau jarak
+        var y = 5; //batas minimal
+        //batas max = y+x;
+        var angka_baru = Math.floor(Math.random() * x) + y;
+
+        // --------metode string---------
+        // length indexOf lastIndexOf Search charAt
+        // toUpperCase() toLowerCase() replace
+        // substring(start, end), substr(start, length)
+        // parseInt parseFloat //string menjadi angka
+        var nama = "120.50";
+        var hasil = parseFloat(nama) + 10;
+
+
+        /* 
+        1. Memilih id wrap 
+        2. Metode innerHTML = nulis konten 
+        */
+        document.getElementById("wrap").innerHTML = hasil;
+    </script>
+</body>
+
+</html>

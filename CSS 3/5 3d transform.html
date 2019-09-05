@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar CSS 3</title>
+</head>
+<style>
+    div {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+    }
+
+    h1 {
+        margin-left: 50px;
+    }
+
+    #div0 {
+        perspective: 100px;
+        perspective-origin: 50% 50%;
+    }
+
+    #div1 {
+        background: blue;
+        transform: rotateX(45deg);
+        transition: background 1s;
+    }
+
+    #div1:hover {
+        background: red;
+    }
+
+    #div2,
+    #div4 {
+        perspective: 100px;
+        perspective-origin: 60% 10%;
+    }
+
+    #div3 {
+        background: red;
+        transform: translateZ(10px) rotateX(45deg);
+        transition: transform 1s;
+    }
+
+    #div3:hover {
+        transform: translateZ(20px) rotateX(60deg);
+    }
+
+    #div5 {
+        background: red;
+        transform: scaleZ(1) rotateY(45deg);
+        transition: transform 2s;
+        border: 1px solid black;
+    }
+
+    #div5:hover {
+        transform: scaleZ(1.5) rotateY(45deg);
+    }
+
+    #div6 {
+        background: aqua;
+        transform: scaleX(1) rotateY(45deg);
+        transition: transform 2s;
+        border: 1px solid black;
+    }
+
+    #div6:hover {
+        transform: scaleX(1.5) rotateY(45deg);
+    }
+</style>
+
+<body>
+
+    <!-- efek hanya pada 3d elemen
+    efek pada child bukan elemennya sendiri -->
+
+    <h1>3D TRANSFORM</h1>
+    <div id="div0">
+        <div id="div1"></div>
+    </div>
+
+    <h1>TRANSLATE & ROTATE</h1>
+    <div id="div2">
+        <div id="div3"></div>
+    </div>
+    <br>
+    <h1>SCALE</h1>
+    <div id="div4">
+        <div id="div5">Scale Z</div>
+        <div id="div6">Scale X</div>
+    </div>
+</body>
+
+</html>

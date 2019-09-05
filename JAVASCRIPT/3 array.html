@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar JAVASCRIPT</title>
+</head>
+<style>
+    #wrap {
+        background-color: black;
+        color: white;
+        font-size: 24px;
+    }
+</style>
+
+<body>
+    <div id="wrap"></div>
+    <script>
+        //tipe data array
+        // array dimulai dari angka 0
+        // var kotak = ["Gagas", "surya", 19];
+        // kotak[2] = "Laksana";
+
+        // var text = "Nama saya adalah " + kotak[2];
+
+        // document.getElementById("wrap").innerHTML = text;
+
+        //sort, reverse, concat, length, join("separator")
+        var namaOrang = ["Gagas", "Surya", "Laksana"];
+        var namaOrang2 = ["koko", "kaka"];
+        var namaOrang3 = ["jeffry", "alex"];
+
+        // var total = namaOrang.concat(namaOrang2, namaOrang3);
+
+        //splice ->add(muai, dihapus?, isi), splice->remove
+        //pop, push, shift(), unshift(),
+
+        // namaOrang.splice(2, 0, "emmy", "abddullah");
+        // namaOrang.splice(2, 1);
+
+        // namaOrang.pop(); //menghapus bagian belakang
+        // namaOrang.push("emmy"); //menambah text dibelakang
+
+        // namaOrang.shift(); //kebalikan pop
+        // namaOrang.unshift("abdullah"); //kebalikan push
+
+        document.getElementById("wrap").innerHTML = namaOrang;
+    </script>
+</body>
+
+</html>

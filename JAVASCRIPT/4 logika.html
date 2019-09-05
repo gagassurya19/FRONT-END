@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar JAVASCRIPT</title>
+</head>
+<style>
+    #wrap {
+        background: black;
+        color: white;
+        font-size: 24px;
+    }
+</style>
+
+<body>
+    <div id="wrap"></div>
+
+    <script>
+        //tipe data boolean
+        //if dan else
+        //operator logika == != > >= < <=
+        var programmer = 24000;
+        var designer = 20000;
+        var barang = 25000;
+
+        // if(syarat){
+        //     kalau terpenuhi
+        // }else{
+        //     kalau tidak terpenuhi
+        // }
+
+        // if (uang == barang) {
+        //     document.getElementById("wrap").innerHTML = "transaksi berhasil!";
+        // } else {
+        //     alert('uang anda tidak cukup');
+        //     document.getElementById("wrap").innerHTML = "transaksi gagal!";
+        // }
+
+        //dan && .... atau ||
+        // if (programmer == barang || designer == barang) {
+        //     alert('uang anda cukup');
+        // } else {
+        //     alert('uang anda tidak cukup!');
+        // }
+
+        //ELSE IF
+        // if (programmer == barang) {
+        //     alert('uang programmer tidak cukup, belanja gagal');
+        // } else if (designer == barang) {
+        //     alert('uang designer cukup, belanja berhasil');
+        // } else if (programmer > barang) {
+        //     alert('uang programmer kebanyakan, belanja tumpeh tumpeh!');
+        // } else {
+        //     alert('uang tidak ada yang cukup');
+        // }
+
+        //NESTED IF (if bercabang/if dalam if)
+        // if (programmer > barang) {
+        //     if (programmer > barang * 2) {
+        //         alert('programmer bisa beli 2 barang');
+        //     } else {
+        //         alert('programmer bisa beli 1 barang');
+        //     }
+        // } else {
+        //     alert('programmer bokek ga bisa beli barang :V');
+        // }
+
+        //SWITCH CASE
+        var nama = "Gagas surya";
+
+        switch (nama) {
+            case "Surya":
+                alert('Namanya adalah Surya');
+                break;
+
+            case "Laksana":
+                alert('Namanya adalah Laksana');
+                break;
+
+            case "Gagas":
+                alert('Namanya adalah Gagas');
+                break;
+
+            default:
+                alert('tidak ada yang tercatat');
+        }
+    </script>
+</body>
+
+</html>

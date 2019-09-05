@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Belajar HTML 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<style>
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+    }
+
+    header,
+    nav,
+    main,
+    aside,
+    footer {
+        border: 1px solid grey;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    main {
+        float: left;
+        width: 65%;
+    }
+
+    aside {
+        float: left;
+        width: 31%;
+    }
+
+    footer {
+        clear: both;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Belajar HTML 5</h1>
+        <h2>Bersama sekolahkoding.com</h2>
+    </header>
+    <div id="search">
+        <input type="search" placeholder="cari">
+        <input type="email" placeholder="email" required>
+        <input type="date">
+        <input type="color">
+        <input type="submit">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">profile</a></li>
+            <li><a href="">req</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+        <article>
+
+            <audio controls>
+                <source src="media/All I Got Lyrics Lyric Video With Kwesi.mp3" type="audio/mp3">
+                <p>browser anda tidak mendukung</p>
+            </audio>
+            <br>
+            <video controls poster="img/gambar.jpeg" width="500" height="300">
+                <source src="media/2019-01-25 21-35-04.mp4" type="video/mp4">
+                <p>browser anda tidak mendukung</p>
+            </video>
+
+            <figure>
+                <img src="img/gambar.jpeg" alt="Gambar apa yak :V" width="400" height="400">
+                <figcaption>
+                    gambar apa ya ini lupa gw :V lo bisa nambahin link juga
+                    <a href="http://www.sekolahkoding.com" target="_blank">sekolahkoding</a>
+                </figcaption>
+            </figure>
+
+            <dialog open>
+                halo teman teman semuanyaaa
+            </dialog>
+
+            <details>
+                <summary>
+                    klik disini untuk info lebih lanjut
+                </summary>
+                <fieldset>
+                    halooo teman teman semuanya :V <br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic natus iste est nostrum, asperiores
+                    quisquam accusantium voluptates ex officiis alias ratione pariatur velit dolorum? Quod quia earum
+                    molestias id odio!
+                </fieldset>
+            </details>
+
+            <section>
+                <h1>DAFTAR PELAJARAN</h1>
+            </section>
+
+            <section>
+                <h2>HTML</h2>
+                <p>membuat struktur website dengan html.</p>
+            </section>
+
+            <section>
+                <h2>CSS</h2>
+                <p>menghias website dengan css</p>
+            </section>
+
+            <section>
+                <h2>JAVASCRIPT</h2>
+                <p>membuat website lebih interaktif dengan javascript</p>
+            </section>
+        </article>
+    </main>
+
+    <aside>
+        <h2>DAFTAR ARTIKEL</h2>
+        <a href="">intro HTML</a> <br>
+        <a href="">belajar dasar HTML</a> <br>
+        <a href="">belajar css</a>
+    </aside>
+
+    <footer>
+        <p> &copy;2019 Gagassurya19</p>
+        <p>create with &hearts;</p>
+    </footer>
+</body>
+
+</html>
